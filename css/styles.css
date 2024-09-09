@@ -702,5 +702,23 @@ header a {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-input:focus {
+  border-color: #4d5ae5;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-input:focus .input-icon {
+  fill: #4d5ae5;
 }
 /*=================== / Input table ===================*/
