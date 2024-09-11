@@ -766,10 +766,19 @@ header a {
   justify-content: center;
   fill: transparent;
 }
-.visually-hidden:checked {
-  background-color: #404bbf;
+
+:root {
+  --background-color: #404bbf;
+  --icon-fill-color: #f4f4fd;
+}
+
+.container-checkbox input:checked + label .title-checkbox-span {
+  background-color: var(--background-color);
   border: none;
-  fill: #f4f4fd;
+}
+
+.container-checkbox input:checked + label .title-checkbox-span .icon-checkbox {
+  fill: var(--icon-fill-color);
 }
 
 .message-privacy {
@@ -781,7 +790,7 @@ header a {
   display: block;
   min-width: 169px;
   min-height: 56px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
