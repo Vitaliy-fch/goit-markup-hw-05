@@ -765,7 +765,6 @@ header a {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
 }
 .visually-hidden:checked {
   background-color: #404bbf;
