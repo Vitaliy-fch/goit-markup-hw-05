@@ -770,9 +770,6 @@ header a {
 .container-checkbox input:checked + label .title-checkbox-span {
   background-color: #404bbf;
   border: none;
-}
-
-.container-checkbox input:checked + label .title-checkbox-span .icon-checkbox {
   fill: #f4f4fd;
 }
 
