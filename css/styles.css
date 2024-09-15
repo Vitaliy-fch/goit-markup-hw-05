@@ -596,11 +596,19 @@ header a {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-footer:hover,
+.button-footer:focus {
+  background-color: #404bbf;
+  cursor: pointer;
 }
 
 .button-icon {
   margin-left: 16px;
 }
+
 /*===================== / Footer =====================*/
 
 /*=================== Input table ===================*/
@@ -614,13 +622,13 @@ header a {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  /* opacity: 1; */
+  /* visibility: hidden; */
+  /* pointer-events: none; */
 }
 
 .model-overlay.is-open {
-  opacity: 1;
+  opacity: 0;
   visibility: visible;
   pointer-events: auto;
 }
@@ -774,6 +782,7 @@ header a {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 4px;
 }
 
 .container-checkbox input:checked + label .title-checkbox-span {
@@ -806,4 +815,11 @@ header a {
   margin-left: auto;
   margin-right: auto;
 }
+
+.order-service:hover,
+.order-service:focus {
+  background-color: #404bbf;
+  cursor: pointer;
+}
+
 /*=================== / Input table ===================*/
